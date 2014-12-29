@@ -1,0 +1,29 @@
+WPT_URL: http://www.webpagetest.org/runtest.php
+WPT_Status_URL: http://www.webpagetest.org/testStatus.php
+APP_URL: https://perfhub.stubcorp.dev/rest/wptresult
+
+WPT_PUBLIC_DN: http://www.webpagetest.org/
+WPT_PRIVATE_DN: http://10.80.188.148:9494/
+
+#public key will be a round robin way
+#each key can be 200 page test per day
+API_KEY: 
+ - A.d24768ce2e82c6d1dbc85e4ca09efa0b
+ - 28953c4fbfaa4291966d57f5e92e06f3
+
+Res_Format: json
+firstview_only: 0
+video_cap: 1
+retry_interval: 30 # in seconds
+max_retry: 5
+
+# get test agent locations: http://www.webpagetest.org/getTesters.php
+
+Target_URLs_Hash: { UN_EventPage: {url: "m.stubhub.com/event/9122285", loc: Dulles%3AChrome.Cable, env: production},
+					UN_SimpleHomePage: {url: "m.stubhub.com/?unified=1%26app=2", loc: Dulles%3AChrome.Cable, env: production}}
+
+# MongoDB info
+#MongoDB_address: localhost
+#MongoDB_port: 37017
+#MongoDB_db: wpt_uxtest
+#ongoDB_db_collection: uxtest_result

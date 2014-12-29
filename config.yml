@@ -6,10 +6,10 @@ WPT_PUBLIC_DN: http://www.webpagetest.org/
 WPT_PRIVATE_DN: http://10.80.188.148:9494/
 
 #public key will be a round robin way
-#each key can be 200 page test per day
+#each key can be 200 page test per day, request yours from http://www.webpagetest.org/getkey.php
 API_KEY: 
- - A.d24768ce2e82c6d1dbc85e4ca09efa0b
- - 28953c4fbfaa4291966d57f5e92e06f3
+ - yourkey123
+ - yourkey456
 
 Res_Format: json
 firstview_only: 0

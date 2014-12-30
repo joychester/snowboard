@@ -56,7 +56,7 @@ test_url_hash.each { |test_tag, test_info|
     wpt_dn=CONFIG['WPT_PRIVATE_DN']
   end
 
-EM.run do
+	EM.run do
 
 		conn_options = {
 			:connect_timeout => 5,
@@ -90,9 +90,14 @@ EM.run do
 			p http.req
 			wpt_res_body = http.response
 			p parsed = JSON.parse(wpt_res_body)
-			test_id = parsed['data']['testId']
+			if parsed['statusCode'] == 200
+				test_id = parsed['data']['testId']
+				p "checking the testing status..."
+			else
+				p 'Invalid Key or exceed the daily test limit for the given key'
+				EM.stop
+			end
 
-			p "checking the testing status..."
 			#Making the GET method call to check test status
 			EM.add_periodic_timer(Retry_interval) do
 				duration = Time.now - start_time

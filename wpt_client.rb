@@ -7,8 +7,6 @@ require 'yaml'
 # get config file
 CONFIG = YAML.load_file('config.yml')
 
-# WPT_URL = CONFIG['WPT_URL']
-# Result_Status_URL = CONFIG['WPT_Status_URL']
 App_URL = CONFIG['APP_URL']
 API_Key = CONFIG['API_KEY']
 if API_Key.class == Array
@@ -49,7 +47,6 @@ test_url_hash.each { |test_tag, test_info|
   	env = test_info['env']
 	req_id = rand_num(6)
 
-  # -------
   if env=='production'
     wpt_dn=CONFIG['WPT_PUBLIC_DN']
   else

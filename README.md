@@ -11,3 +11,7 @@ Usage:
     ruby wpt_client.rb -- to get and upload the json objects for your test results;  
 
 PS: you can write your own dashboard or store the whole thing to mongoDB for page trending and further analysis, checkout Page_Trend_WPT images and get some idea of it.
+
+Here is my example, FYI:  
+![WPT_Dash_screenshot1](https://github.com/joychester/snowboard/blob/master/Page_Trend_WPT.PNG)
+![WPT_Dash_screenshot2](https://github.com/joychester/snowboard/blob/master/Page_Trend_WPT_videoframes.PNG)

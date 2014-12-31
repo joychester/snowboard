@@ -8,6 +8,11 @@ require 'yaml'
 CONFIG = YAML.load_file('config.yml')
 
 App_URL = CONFIG['APP_URL']
+F = CONFIG['Res_Format']
+Fview = CONFIG['firstview_only']
+Cvideo = CONFIG['video_cap']
+Retry_interval = CONFIG['retry_interval']
+Max_retry = CONFIG['max_retry']
 API_Key = CONFIG['API_KEY']
 if API_Key.class == Array
 	key_num = API_Key.size
@@ -15,13 +20,6 @@ else
 	p "Not well defined API_KEYs in config.yml, should be an array instead of #{API_Key.class}"
 	exit 1
 end
-
-F = CONFIG['Res_Format']
-Fview = CONFIG['firstview_only']
-Cvideo = CONFIG['video_cap']
-Retry_interval = CONFIG['retry_interval']
-Max_retry = CONFIG['max_retry']
-
 
 #generating random request id
 def rand_num(len)

@@ -1,6 +1,6 @@
 WPT_URL: http://www.webpagetest.org/runtest.php
 WPT_Status_URL: http://www.webpagetest.org/testStatus.php
-APP_URL: https://perfhub.stubcorp.dev/rest/wptresult
+APP_URL: https://perfhub.yourcorp.dev/rest/wptresult
 
 WPT_PUBLIC_DN: http://www.webpagetest.org/
 WPT_PRIVATE_DN: http://10.80.188.148:9494/
@@ -19,8 +19,8 @@ max_retry: 5
 
 # get test agent locations: http://www.webpagetest.org/getTesters.php
 
-Target_URLs_Hash: { UN_EventPage: {url: "m.stubhub.com/event/9122285", loc: Dulles%3AChrome.Cable, env: production},
-					UN_SimpleHomePage: {url: "m.stubhub.com/?unified=1%26app=2", loc: Dulles%3AChrome.Cable, env: production}}
+Target_URLs_Hash: { UN_EventPage: {url: "m.abc.com/event/9122285", loc: Dulles%3AChrome.Cable, env: production},
+					UN_SimpleHomePage: {url: "m.abc.com/?unified=1%26app=2", loc: Dulles%3AChrome.Cable, env: production}}
 
 # MongoDB info
 #MongoDB_address: localhost

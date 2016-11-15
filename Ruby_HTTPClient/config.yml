@@ -25,5 +25,5 @@ max_retry: 5
 # URLs under Tests
 Target_URLs_Hash: { Tag_HomePage: {url: "https://www.abchost.com/", loc: "Dulles:Chrome.Cable", env: "production"},
           Tag_HomePage_3G: {url: "https://www.abchost.com/", loc: "Dulles:Chrome.3GFast", env: "production"},
-          UN_EventPage: {url: "https://www.abchost.com/96403402222/", loc: "Dulles:Chrome.Cable", env: "production"},
-          UN_EventPage_3G: {url: "https://www.abchost.com/96403402222/", loc: "Dulles:Chrome.3GFast", env: "production"}}
+          Tag_YourPage: {url: "https://www.abchost.com/96403402222/", loc: "Dulles:Chrome.Cable", env: "production"},
+          UN_YourPage_3G: {url: "https://www.abchost.com/96403402222/", loc: "Dulles:Chrome.3GFast", env: "production"}}

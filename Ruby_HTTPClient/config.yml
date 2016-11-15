@@ -1,0 +1,29 @@
+WPT_TestRunner_URL: https://www.webpagetest.org/runtest.php
+WPT_TestStatus_URL: https://www.webpagetest.org/testStatus.php
+APP_URL: http://you.host.com/rest/api
+
+WPT_PRIVATE_DN: http://10.123.123.123/
+WPT_PUBLIC_DN: https://www.webpagetest.org/
+
+#public key will be a round robin way
+#each key can be 200 page test per dayAPP
+API_KEY:
+ - YourKeyString1
+ - YourKeyString2
+ - YourKeyString3
+
+
+
+Res_Format: json
+firstview_only: 0 #disable repeat view
+video_cap: 1
+retry_interval: '30s'
+max_retry: 5
+
+# get test agent locations: http://www.webpagetest.org/getTesters.php
+
+# URLs under Tests
+Target_URLs_Hash: { Tag_HomePage: {url: "https://www.abchost.com/", loc: "Dulles:Chrome.Cable", env: "production"},
+          Tag_HomePage_3G: {url: "https://www.abchost.com/", loc: "Dulles:Chrome.3GFast", env: "production"},
+          UN_EventPage: {url: "https://www.abchost.com/96403402222/", loc: "Dulles:Chrome.Cable", env: "production"},
+          UN_EventPage_3G: {url: "https://www.abchost.com/96403402222/", loc: "Dulles:Chrome.3GFast", env: "production"}}
